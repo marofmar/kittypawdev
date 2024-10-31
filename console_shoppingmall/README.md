@@ -1,2 +1,22 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+
+# Console Shoppingmall [콘솔 샤핑몰]
+
+## 프로젝트 개요
+Dart 문법에 익숙해지기 위해 간단한 콘솔 쇼핑몰을 구현해 보았습니다. 
+
+| 서비스 목록 |
+| :---: |
+[1] 상품 목록 보기 / [2] 장바구니에 담기 / [3] 장바구니에 담긴 상품의 총 가격 보기 / [4] 프로그램 종료 /
+
+
+
+
+### 프로젝트 일정
+> 24/10/28~23/10/31
+
+### TroubleShooting
+- 
+
+### 유지보수 및 개선사항
+- 
+
