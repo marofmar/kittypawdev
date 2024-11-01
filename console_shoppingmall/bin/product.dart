@@ -25,21 +25,22 @@ class ShoppingMall {
 
   final Map<String, int> cart = {};
 
-  // 1번
+  // 1번 판매 제품을 출력하는 함수
   void showProducts() {
     for (var product in products) {
       print("${product.name} / ${product.price}원");
     }
   }
 
-  // 2번
+  // 2번 상품을 장바구니에 담는 함수
   void addToCart() {
     Product? selectedProduct;
     while (selectedProduct == null) {
       stdout.write("상품 이름을 입력해 주세요: ");
       String? itemName = stdin.readLineSync();
 
-      bool productExist = products.any((product) => product.name == itemName);
+      bool productExist = products
+          .any((product) => product.name == itemName); // 입력한 상품 이름과 일치하는 항목 확인
 
       if (productExist) {
         selectedProduct =
@@ -79,7 +80,7 @@ class ShoppingMall {
     // print(cart);
   }
 
-  // 3번
+  // 3번 장바구니 총 가격 산출하는 함수
   void showTotal() {
     int totalPrice = 0;
     if (cart.isEmpty) {
